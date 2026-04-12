@@ -11,7 +11,7 @@ pipeline {
         stage('Build and Test') {
             steps {
                 // Change 'docker-compose' to 'docker compose'
-                sh 'docker compose up --build --exit-code-from tests --abort-on-container-exit'
+                sh 'HOST_WORKSPACE=${WORKSPACE} docker compose up --build --exit-code-from tests --abort-on-container-exit'
             }
         }
     }
@@ -19,7 +19,7 @@ pipeline {
     post {
         always {
             // Change 'docker-compose' to 'docker compose' here too
-            sh 'docker compose down'
+            sh 'HOST_WORKSPACE=${WORKSPACE} docker compose down'
         }
     }
 }
