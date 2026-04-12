@@ -11,6 +11,6 @@ services:
     environment:
       - TEST_BASE_URL=http://sut:8080
     volumes:
-      - ./MyTestProject:/test
+      - ./MyTestProject
     working_dir: /test
     command: /bin/bash -c "dotnet test"
