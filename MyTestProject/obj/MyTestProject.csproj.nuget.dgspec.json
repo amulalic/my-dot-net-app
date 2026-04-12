@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/MyTestProject.csproj": {}
+    "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/MyTestProject.csproj": {}
   },
   "projects": {
-    "/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/MyTestProject.csproj": {
+    "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/MyTestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/MyTestProject.csproj",
+        "projectUniqueName": "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/MyTestProject.csproj",
         "projectName": "MyTestProject",
-        "projectPath": "/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/MyTestProject.csproj",
+        "projectPath": "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/MyTestProject.csproj",
         "packagesPath": "/Users/amulalic/.nuget/packages/",
-        "outputPath": "/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/obj/",
+        "outputPath": "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/amulalic/.nuget/NuGet/NuGet.Config"
