@@ -1,0 +1,6 @@
+/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/obj/Debug/net8.0/MyTestProject.csproj.AssemblyReference.cache
+/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/obj/Debug/net8.0/MyTestProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/obj/Debug/net8.0/MyTestProject.AssemblyInfoInputs.cache
+/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/obj/Debug/net8.0/MyTestProject.AssemblyInfo.cs
+/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/obj/Debug/net8.0/MyTestProject.csproj.CoreCompileInputs.cache
+/Users/amulalic/git/repos/MyDotNetApp/MyTestProject/obj/Debug/net8.0/MyTestProject.sourcelink.json
