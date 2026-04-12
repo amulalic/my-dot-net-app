@@ -1,0 +1,16 @@
+services:
+  sut:
+    build: ./MyDotNetApp
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+
+  tests:
+    image: mcr.microsoft.com/playwright/dotnet:v1.59.0-jammy
+    depends_on:
+      - sut
+    environment:
+      - TEST_BASE_URL=http://sut:8080
+    volumes:
+      - ./MyTestProject:/test
+    working_dir: /test
+    command: /bin/bash -c "dotnet test"
