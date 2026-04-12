@@ -10,7 +10,10 @@ services:
       - sut
     environment:
       - TEST_BASE_URL=http://sut:8080
+    # Map the entire repository root so paths match exactly
     volumes:
-      - ./MyTestProject
-    working_dir: /test
+      - .:/src
+    # Set the working directory to the specific folder containing the .csproj
+    working_dir: /src/MyTestProject
+    # Run the test
     command: /bin/bash -c "dotnet test"
