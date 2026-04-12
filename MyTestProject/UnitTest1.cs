@@ -17,6 +17,7 @@ public class PlaywrightTests : PageTest
         await Page.GotoAsync(baseUrl);
 
         // 3. Assert the title (Standard .NET apps usually have "Home page - MyWebApp")
+        // Replace this with propper assertion
         await Expect(Page).ToHaveTitleAsync(new System.Text.RegularExpressions.Regex("Home page"));
     }
 }
