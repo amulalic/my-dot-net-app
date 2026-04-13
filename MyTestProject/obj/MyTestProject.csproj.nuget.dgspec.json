@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/src/MyTestProject/MyTestProject.csproj": {}
+    "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/MyTestProject.csproj": {}
   },
   "projects": {
-    "/src/MyTestProject/MyTestProject.csproj": {
+    "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/MyTestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/src/MyTestProject/MyTestProject.csproj",
+        "projectUniqueName": "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/MyTestProject.csproj",
         "projectName": "MyTestProject",
-        "projectPath": "/src/MyTestProject/MyTestProject.csproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/src/MyTestProject/obj/",
+        "projectPath": "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/MyTestProject.csproj",
+        "packagesPath": "/Users/amulalic/.nuget/packages/",
+        "outputPath": "/Users/amulalic/git/repos/my-dot-net-app/MyTestProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/Users/amulalic/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.419/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.419/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

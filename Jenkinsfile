@@ -1,6 +1,14 @@
 pipeline {
     agent any 
 
+    parameters {
+        choice(
+            name: 'TEST_CATEGORY',
+            choices: ['All', 'Smoke', 'Regression', 'Critical'],
+            description: 'Select which test category to execute'
+        )
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -14,6 +22,17 @@ pipeline {
                 // Notice: No more HOST_WORKSPACE or hardcoded /Users/amulalic/ paths!
                 // Since we are building the image, Docker uses the local workspace files.
                 sh 'docker compose up --build --exit-code-from tests --abort-on-container-exit'
+
+                script {
+                    // Create the filter argument
+                    def testArgs = ""
+                    if (params.TEST_CATEGORY != 'All') {
+                        testArgs = "--filter TestCategory=${params.TEST_CATEGORY}"
+                    }
+                    
+                    // Pass it as a variable to Docker Compose
+                    sh "DYNAMIC_ARGS='${testArgs}' docker compose up --build --exit-code-from tests"
+                }
             }
         }
     }

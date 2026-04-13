@@ -10,3 +10,6 @@ services:
       - sut
     environment:
       - TEST_BASE_URL=http://sut:8080
+    
+    # This appends your filter to the ENTRYPOINT ["dotnet", "test"]
+    command: ${DYNAMIC_ARGS:-}
