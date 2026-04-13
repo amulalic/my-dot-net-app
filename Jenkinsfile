@@ -19,10 +19,6 @@ pipeline {
 
         stage('Build and Test') {
             steps {
-                // Notice: No more HOST_WORKSPACE or hardcoded /Users/amulalic/ paths!
-                // Since we are building the image, Docker uses the local workspace files.
-                sh 'docker compose up --build --exit-code-from tests --abort-on-container-exit'
-
                 script {
                     // Create the filter argument
                     def testArgs = ""
