@@ -32,7 +32,7 @@ public class PlaywrightTests : PageTest
         await Page.GotoAsync(baseUrl);
 
         // 3. Click the "Privacy" link in the header
-        await Page.GetByRole(AriaRole.Link, new() { Name = "Privacy" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "Privacy" }).First.ClickAsync();
 
 
         // 4. Assert the title
